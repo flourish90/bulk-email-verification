@@ -5,7 +5,7 @@ var apiURL = "https://cors-anywhere.herokuapp.com/https://reacher-csv.herokuapp.
 
 function parse() {
     var file = document.getElementById('myDOMElementId').files[0];
-    apiKey = document.getElementById('reacher-api-key').value;
+    // apiKey = document.getElementById('reacher-api-key').value;
 
     Papa.parse(file, {
       header: false,
@@ -48,9 +48,9 @@ async function postData(url, data) {
     cache: 'no-cache',
     credentials: 'same-origin', 
     headers: {
-      'Content-Type': 'application/json',
-      'x-saasify-proxy-secret': 'PATRICK1',
-      'authorization': apiKey
+      'Content-Type': 'application/json'
+      // 'x-saasify-proxy-secret': 'PATRICK1'
+      // 'authorization': apiKey
       
     },
     redirect: 'follow', 
