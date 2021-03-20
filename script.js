@@ -1,7 +1,7 @@
 var data;
 var baseElem = document.getElementById("main-table");
-var apiKey;
-var apiURL = "https://cors-anywhere.herokuapp.com/https://reacher-csv.herokuapp.com/v0/check_email"
+var apiKey = 'test';
+var apiURL = "https://cors-anywhere.herokuapp.com/https://reacher-csv.herokuapp.com/v0/check_email";
 
 function parse() {
     var file = document.getElementById('myDOMElementId').files[0];
