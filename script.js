@@ -48,8 +48,8 @@ async function postData(url, data) {
     cache: 'no-cache',
     credentials: 'same-origin', 
     headers: {
-      'Content-Type': 'application/json'
-      'x-saasify-proxy-secret': 'PATRICK1'
+      'Content-Type': 'application/json',
+      'x-saasify-proxy-secret': 'PATRICK1',
       'authorization': apiKey
       
     },
