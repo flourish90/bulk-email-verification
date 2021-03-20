@@ -1,4 +1,4 @@
 # reacher-csv-frontend
 
-Auoz deploys to:
+Auto-deploys to:
 https://bulk-email-verification.netlify.app/
