@@ -1,1 +1,41 @@
-test
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/papaparse@5.3.0/papaparse.min.js"></script>
+  </head>
+  <body>
+    <h1>Bulk-Verify Email Adresses using reacher.email</h1>
+
+    <p><strong>Instructions</strong>
+      <ol>
+        <li>Click "Select CSV-File" and choose the CSV-file from your system. The file must contain only Email adresses, one adress per line.
+        <li>Sample file can be found <a href="sample.csv" target="_blank">here</a>.
+        <li>Click "Verify Emails"
+        <li>Emails from the file will be listest below "Results"
+        <li>After a few seconds, verification results will be shown next to each adress.
+        <li>Note that for privacy reasons, the csv-file won't be uploaded. It will stay safely on your system at all times.
+      </ol>
+    </p>
+    
+    <div class="file-input">
+      <input type="file" id="myDOMElementId" class="file">
+      <label for="myDOMElementId">
+        Select CSV-File...
+      </label>
+      <p>
+      <strong> Your Reacher.email Auth Token: <strong><br>
+      <input type="text" id="reacher-api-key" name="reacher-api-key" value="4e5ce691487f181f54d236f4">
+      </p>
+    </div>
+
+    <div class="button" onclick="parse()">Verify Emails!</div>
+
+    <div id="main-table"><strong>RESULTS</strong></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
