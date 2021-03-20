@@ -32,8 +32,8 @@ echo "";
         Select CSV-File...
       </label>
       <p>
-      <strong> Your Reacher.email Auth Token: <strong><br>
-      <input type="text" id="reacher-api-key" name="reacher-api-key" value="4e5ce691487f181f54d236f4">
+      <!-- strong> Your Reacher.email Auth Token: <strong><br>
+      <input type="text" id="reacher-api-key" name="reacher-api-key" value="4e5ce691487f181f54d236f4" -->
       </p>
     </div>
 
