@@ -1,6 +1,7 @@
 var data;
 var baseElem = document.getElementById("main-table");
 var apiKey;
+var apiURL = "https://reacher-csv.herokuapp.com/v0/check_email"
 
 function parse() {
     var file = document.getElementById('myDOMElementId').files[0];
@@ -26,7 +27,7 @@ function stepthroughResultsAndCallApi(data) {
       node.id = index[0];
       document.getElementById("main-table").appendChild(node);
 
-      postData('https://ssfy.sh/amaurymartiny/reacher@0d919999/check_email', { "to_email": index[0] })
+      postData(apiURL, { "to_email": index[0] })
         .then(data => {
           console.log(data);
           var content = document.getElementById(data.input).innerHTML;
@@ -52,10 +53,10 @@ async function postData(url, data) {
       
     },
     redirect: 'follow', 
-    referrerPolicy: 'no-referrer', 
+    referrerPolicy: 'origin-when-cross-origin',
+    // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url 
     body: JSON.stringify(data) 
   });
   return response.json();
 }
-
 
