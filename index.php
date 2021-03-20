@@ -1,3 +1,8 @@
+<?php
+
+echo "";
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,7 +22,7 @@
         <li>Click "Verify Emails"
         <li>Emails from the file will be listest below "Results"
         <li>After a few seconds, verification results will be shown next to each adress.
-        <li>Note that for privacy reasons, the csv-file won't be uploaded. It will stay safely on your system at all times.
+        <li>Note that for privacy reasons, the csv-file will not be uploaded. It will stay safely on your system at all times.
       </ol>
     </p>
     
@@ -39,3 +44,6 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+
+
